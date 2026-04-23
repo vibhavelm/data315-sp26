@@ -12,6 +12,7 @@
         .scale(40000)
         .center([-87.39, 41.52])
         .translate([width, height]);
+    
     let path = d3.geoPath().projection(proj);
 
     // $: scale = d3.scaleOrdinal(d3.schemeDark2)

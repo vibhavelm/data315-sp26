@@ -66,6 +66,7 @@
       data = [...fullData];
     }
   }
+  
 </script>
 
 <main>
