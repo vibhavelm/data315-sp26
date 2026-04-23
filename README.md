@@ -156,11 +156,11 @@ Thursday - Writing swap activity
 
 Tuesday - Presentations
 
-- **Writing swap due May 13!**
+- **Writing swap due May 20!**
 
 Thursday - Presentations
 
-- **Project due May 15!**
+- **Project due May 22!**
 
 
 ## Coursework

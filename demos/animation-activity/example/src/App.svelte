@@ -90,7 +90,7 @@
     // resort data based on howLong
     data.sort((a,b) => b.howLong - a.howLong);
 
-    // update array used to ser x-axis domain to reflect new order
+    // update array used to set x-axis domain to reflect new order
     xScale.domain(data.map(d => d.title));
 
     // change y-axis scale to represent howLong
@@ -130,7 +130,7 @@
       // .data(data)
       .transition()
       .duration(750)
-      .delay(1250)
+      .delay(1250) // 500 init delay + 750 first transition
       .call(d3.axisBottom(xScale));
       // .delay((d, i) => 1250 + i * 50)
       // .attr("transform", (d) => `translate(${xScale(d.title)}px, 0px)`);
