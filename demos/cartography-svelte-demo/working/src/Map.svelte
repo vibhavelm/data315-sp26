@@ -14,12 +14,13 @@
         .translate([width, height]);
     let path = d3.geoPath().projection(proj);
 
+    // scales should use fullData to avoid updating on brush events
     // $: scale = d3.scaleOrdinal(d3.schemeDark2)
     //   .domain(d3.extent(data.map((d) => +d.properties.name10)));
     // $: scale = d3.scaleSequential(d3.interpolateGreens)
     //   .domain(d3.extent(data.map((d) => +d.properties.walkability)));
     $: scale = d3.scaleSequential(d3.interpolatePiYG)
-        .domain([d3.min(data.map((d) => +d.properties.population)), d3.median(data.map((d) => +d.properties.population)), d3.max(data.map((d) => +d.properties.population))]);
+        .domain([d3.min(fullData.map((d) => +d.properties.population)), d3.median(fullData.map((d) => +d.properties.population)), d3.max(fullData.map((d) => +d.properties.population))]);
 
     let legend;
     $: {	
